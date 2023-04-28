@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background: #323445;
+}
+h1, h2, h3, h4 {
+  font-family: Helvetica Neue Medium Extended;
+  src: url('Fontit/Helvetica-Neue-Font/Helvetica Neue Medium Extended.ttf');
+}
+p, a {
+  font-family: Merriweather;
+  src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
+  font-size: 18px;
+}
+li {
+    list-style: none;
+    font-family: Merriweather;
+  src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.label {
+  font-family: Helvetica Neue Medium Extended;
+  src: url('Fontit/Helvetica-Neue-Font/Helvetica Neue Medium Extended.ttf');
+}
+figcaption {
+  font-family: Helvetica Neue Medium Extended;
+  src: url('Fontit/Helvetica-Neue-Font/Helvetica Neue Medium Extended.ttf');
+}
+
+/*Navbar*/
+
+header {
+    position: relative;
+    padding: 0 2rem;
+  }
+  .navbar {
+      width: 100%;
+      height: 70px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 1rem;
+      padding-right: 2rem;
+  }
+  .links li {
+    display: inline-block;
+    padding-left: 2rem;
+}
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .logo:hover, .logo:focus, .logo:active {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  .links a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+  }
+  .links a::after {
+    content: '';
+    position: absolute;
+    width: 102%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEC158;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/*Contact page*/
+
+.contacttitle {
+    width: 100%;
+    max-width: 1136px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .contacttitle h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 3rem;
+    margin-top: 7rem;
+  }
+  .contacttitle a {
+    color: #FEC158;
+    font-size: 30px;
+  }
+  .contactmain {
+    background-color: #232533;
+    width: 100%;
+    max-width: 1136px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 14rem;
+  }
+  .contactrow {
+    display: flex;
+    max-width: 1136px;
+    margin: 0 auto;
+  }
+  .contactcolumn {
+    width: 34%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    color: #fff;
+    background-color:#414557;
+    text-align: center;
+  }
+  .contactcolumn img {
+    border-bottom: 3px solid #FEC158;
+  }
+  .contactcolumn2 {
+    width: 66%;
+  }
+  .contacticons {
+    margin-top: -3rem;
+    margin-left: 2rem;
+  }
+  .contacticons a {
+    padding-right:.8rem;
+    padding-left: .8rem;
+    font-size: 27px;
+    text-decoration: none;
+    color: #323445;
+    text-align: center;
+  }
+  .contacticons a:hover {
+    color: #FEC158;
+  }
+  
+  /*Contact form*/
+  
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 14px; 
+    resize: vertical;
+    background-color: #c4c4c4;
+    outline: none;
+  }
+  input[type=submit] {
+    background-color: #FEC158;
+    color: rgb(0, 0, 0);
+    padding: 12px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Merriweather;
+    src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
+    font-size: 18px;
+  }
+  input[type=submit]:hover {
+    background-color: #fecd79;
+    font-family: Merriweather;
+    src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
+    font-size: 18px;
+  }
+  .formcontainer {
+    background-color: #323445;
+    padding: 30px 30px 30px 30px;
+    margin: 2rem 2rem 2rem 4rem;
+  }
+  .formcontainer label {
+    color: #fff;
+    src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
+    font-size: 20px;
+  }
+  ::placeholder {
+  color: #2c2c2c;
+  src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
+    font-size: 14px;
+  }
+  
+  /*Footer*/
+
+.footer {
+    background-color: #232533;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+  }
+  .footer-col {
+    width: 86%;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer-col p {
+    color: #fff;
+    margin-bottom: 1.1rem;
+  }
+  .footer-col a {
+    display: inline-block;
+    position: relative;
+  }
+  .footer-col a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: #FEC158;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .footer-col a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .footer-col h4 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.1rem;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .footer ul {
+    list-style: none;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .footer-col-2 {
+    width: auto;
+  }
+  .footer-col-2 h4 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col-3 {
+    width: auto;
+    margin-left: 3rem;
+  }
+  .footer-col-3 h4 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col-2 li {
+    padding-top: .3rem;
+  }
+  .footer-col-3 li {
+    padding-top: .3rem;
+  }
+  .footer-col-2 a {
+    display: inline-block;
+    position: relative;
+  }
+  .footer-col-3 a {
+    display: inline-block;
+    position: relative;
+  }
+  .footer-col-2 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEC158;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .footer-col-2 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .footer-col-3 a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FEC158;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .footer-col-3 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
