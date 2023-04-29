@@ -1042,3 +1042,246 @@ justify-content: end;
   transform-origin: bottom left;
 }
 
+
+
+@media (max-width: 800px) {
+
+  body{
+      background: #323445;
+      height: 100vh;
+      overflow: hidden;
+  }
+  .navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .header {
+    position: relative;
+    padding-right: 2rem;
+    padding-left: 1rem;
+  }
+  .links li {
+    display: inline-block;
+    padding-left: 2rem;
+  }
+  .Title-text a {
+    color: #FEC158;
+    font-size: 30px;
+  }
+  .Title-text { 
+    position: relative;
+    top: 150px;
+    color: #fff;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .Title-text a.button {
+  position: absolute;
+  background-color: #fff;
+  color: #232533;
+  border-radius: 10px;
+  padding: .4rem .8rem .4rem .8rem;
+  font-size: 16px;
+  top: 180px;
+  text-decoration: none;
+  }
+  .Title-text h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .Title-text p {
+    margin-top: 2rem;
+  }
+  .Title-text span {
+    background: #FEC158;
+    height: 5px;
+    width: 90px;
+    position: absolute;
+    padding: 0 2rem;
+  }
+  .Title-text img {
+    margin-top: -10rem;
+    margin-left: 18.5rem;
+  }
+  .Projects {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    background-color: #232533;
+    margin-top: 9rem;
+    position: relative;
+  }
+  .ProjectsContent {
+  color: #fff;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  position: relative;
+  }
+  .ProjectsContent h1 {
+  font-size: 38px;
+  }
+  .mockup1 {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+  display: flex;
+  }
+  .mockup1 img {
+  padding-bottom: 1.5rem;
+  }
+  .ProjectsText {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: #fff;
+  }
+  .ProjectsText h2 {
+    font-size: 32px;
+  }
+  .ProjectsText p {
+    color: #fff;
+    display: flex;
+    text-align: start;
+  }
+  .mockup2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: end;
+    margin-top: -5rem;
+  }
+  .mockup2 img {
+  margin-top: 5rem;
+  padding-bottom: 1.5rem;
+  }
+  .ProjectsText2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  justify-content: end;
+  color: #fff;
+  text-align: end;
+  }
+  .ProjectsText2 p {
+  display: flex;
+  justify-content: end;
+  }
+  .ProjectsText2 h2 {
+  font-size: 32px;
+  }
+  .explore {
+  margin-top: -1.4rem;
+  padding-left: 2rem;
+  }
+  .explore span {
+  color: #FEC158;
+  margin-left: .5rem;
+  font-size: 25px;
+  }
+  .explore a {
+  color: #FEC158;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  }
+  .explore a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FEC158;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  }
+  .explore a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  }
+  .slider {
+    overflow: hidden;
+    background: #323445;
+    margin: 4rem 0rem 2rem 0rem;
+    width: auto;
+  }
+  .slides{
+    width: 500%;
+    display: flex;
+  }
+  .slides input{
+    display: none;
+  }
+  .slides p {
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 16px;
+  }
+  .slides h3 {
+    padding-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    color: #fff;
+    padding-right: 2rem;
+  }
+  .slide {
+    width: 20%;
+    transition: 2s;
+    display: flex;
+  }
+  .slide img {
+    width: 280px;
+    height: 150px;
+    padding-left: 2rem;
+  }
+  .navigation-manual{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .manual-btn {
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid white;
+    padding: 2px;
+    width: 40px;
+    margin-top: 3rem;
+  }
+  .manual-btn:not(:last-child){
+    margin-right: 10px;
+  }
+  .manual-btn:hover{
+    background-color: #FEC158;
+  }
+  #radio1:checked ~ .first{
+  margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+  margin-left: -20%;
+  }
+  #radio3:checked ~ .first{
+  margin-left: -40%;
+  }
+  #radio4:checked ~ .first{
+  margin-left: -60%;
+  }
+  #radio1:checked ~ .manual-btn{
+    background-color: #FEC158;
+  }
+  #radio2:checked ~ .manual-btn{
+    background-color: #FEC158; 
+  }
+  #radio3:checked ~ .manual-btn{
+    background-color: #FEC158;
+  }
+  #radio4:checked ~ .manual-btn{
+    background-color: #FEC158;
+  }
+}
