@@ -1048,7 +1048,6 @@ justify-content: end;
 
   body{
       background: #323445;
-      height: 100vh;
       overflow: hidden;
   }
   .navbar {
