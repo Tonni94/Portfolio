@@ -986,4 +986,26 @@ margin-left: -40%;
   .footer-col-3 {
     margin-left: 1.5rem;
   }
+
+@media (max-width: 449px) {
+  .slides h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 373px) {
+.slides h3 {
+    margin-left: .5rem;
+  }
+.slides p {
+  margin-left: .5rem;
+}
+.slide img {
+  width: 190px;
+  height: 100px;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.manual-btn {
+  margin-top: 2rem;
+}    
 }
