@@ -1927,10 +1927,10 @@ margin-left: -40%;
 }
 @media (max-width: 308px) {
   header {
-    padding-right: .5rem;
-    padding-left: .5rem;  
+    padding-right: .2rem;
+    padding-left: .2rem;  
   }
   .links li {
-    padding-left: .5rem;
+    padding-left: .1rem;
   }
 }
