@@ -1768,7 +1768,7 @@ margin-left: -40%;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header {
     padding-right: 1rem;
     padding-left: 1rem;  
