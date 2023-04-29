@@ -987,20 +987,3 @@ margin-left: -40%;
     margin-left: 1.5rem;
   }
 }
-
-@media (max-width: 308px) {
-  .logo {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  header {
-    padding-right: .1rem;
-    padding-left: .1rem;  
-  }
-  header a {
-    font-size: 14px;
-  }
-  .links li {
-    padding-left: .1rem;
-  }
-}
