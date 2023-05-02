@@ -125,18 +125,17 @@ header {
     margin: 0 auto;
   }
   .aboutcolumn {
-    width: 70%;
+    width: 60%;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 3rem;
     color: #fff;
   }
   .aboutcolumn2 {
-    width: 30%;
-    padding-left: 2rem;
+    width: 40%;
     padding-right: 2rem;
     margin-top: 3rem;
-    margin-bottom:-.22rem;
+    margin-bottom: 3rem;
   }
   .aboutcolumn h3 {
     display: flex;
