@@ -329,64 +329,53 @@ header {
 
 
   @media (max-width: 400px) {
-    .contacttitle {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-    }
-    .contacttitle h1{
-      font-size: 50px;
-      color: #fff;
-      margin-bottom: 3rem;
-      margin-top: 7rem;
-      padding: 0 2rem;
-    }
-    .contacttitle a {
-      color: #FEC158;
-      font-size: 30px;
+    .contacttitle h1 {
+      padding: 0 1rem;
     }
     .formcontainer {
-      width: 100%;
       padding: 0;
-      margin: 0 0 0 0;
+      width: 100%;
       background-color: #232533;
       visibility: visible;
+      margin: 0 auto;
+      max-width: 368px;
     }
-    
     .contactrow {
-      margin: 0;
-      padding: 0;
-      margin-left: -10.9rem;
-      
       visibility: hidden;
+      padding: 0;
+      margin: 0;
+      max-width: 400px;
     }
     .contactcolumn2 {
+      visibility: hidden;
+      padding: 0;
+      margin: 0;
       width: 100%;
     }
     .contactmain {
-      margin: 0 auto;
+      margin: 0 auto 8rem auto;
       background-color: #232533;
-      padding-top: 3rem;
-      margin-bottom: 8rem;
-      padding-bottom:3rem;
-      
+      justify-content: left;
+      align-items: start;
+      display: flex;
+      padding: 3rem 1rem 5rem 1rem;
     }
     .contactcolumn {
-      margin: 30rem 0 0 0;
       visibility: hidden;
+      padding: 0;
+      margin: 0;
+      width: 0;
     }
     .contactcolumn img {
-      margin-left:8.87rem;
       visibility: visible;
       height: 400px;
-      width: 336.86px;
-      margin-top: -1rem;
+      width: 368px;
+      margin: 29rem auto 0 auto;
     }
     .contacticons {
       margin-top: -3rem;
-      margin-left: 15rem;
       visibility: visible;
       display: flex;
+      margin-left: 7rem;
     }
   }
