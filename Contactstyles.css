@@ -329,22 +329,22 @@ header {
 
 
   @media (max-width: 400px) {
-    .contacttitle h1 {
-      padding: 0 1rem;
+  .contacttitle h1 {
+      padding: 0 1rem 0 1rem;
     }
     .formcontainer {
-      padding: 0;
       width: 100%;
       background-color: #232533;
       visibility: visible;
-      margin: 0 auto;
-      max-width: 368px;
+      margin: 0;
+      padding: 0;
     }
     .contactrow {
       visibility: hidden;
       padding: 0;
       margin: 0;
-      max-width: 400px;
+      width: 100%;
+      background-color: #232533;
     }
     .contactcolumn2 {
       visibility: hidden;
@@ -353,12 +353,12 @@ header {
       width: 100%;
     }
     .contactmain {
-      margin: 0 auto 8rem auto;
+      margin: 0 0 10rem 0;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       background-color: #232533;
-      justify-content: left;
-      align-items: start;
-      display: flex;
-      padding: 3rem 1rem 5rem 1rem;
     }
     .contactcolumn {
       visibility: hidden;
@@ -367,15 +367,21 @@ header {
       width: 0;
     }
     .contactcolumn img {
-      visibility: visible;
-      height: 400px;
-      width: 368px;
-      margin: 29rem auto 0 auto;
+      visibility: hidden;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      width: 600px;
     }
     .contacticons {
-      margin-top: -3rem;
+      margin-top: -1rem;
       visibility: visible;
       display: flex;
-      margin-left: 7rem;
+      position: relative;
+      color: #fff;
+      margin-left: 12rem;
+    }
+    .contacticons a {
+      color: #c4c4c4;
     }
   }
