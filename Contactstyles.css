@@ -33,12 +33,17 @@ figcaption {
   font-family: Helvetica Neue Medium Extended;
   src: url('Fontit/Helvetica-Neue-Font/Helvetica Neue Medium Extended.ttf');
 }
-
+body{
+  background: #323445;
+  overflow-x: hidden
+}
+html {
+overflow-x: hidden
+}
 /*Navbar*/
 
 header {
     position: relative;
-    padding: 0 2rem;
   }
   .navbar {
       width: 100%;
@@ -48,8 +53,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 1rem;
-      padding-right: 2rem;
+      padding: 0 2rem;
   }
   .links li {
     display: inline-block;
@@ -99,7 +103,7 @@ header {
 
 .contacttitle {
     width: 100%;
-    max-width: 1136px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
   }
@@ -108,41 +112,48 @@ header {
     color: #fff;
     margin-bottom: 3rem;
     margin-top: 7rem;
+    padding: 0 2rem;
   }
   .contacttitle a {
     color: #FEC158;
     font-size: 30px;
   }
   .contactmain {
-    background-color: #232533;
     width: 100%;
-    max-width: 1136px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 14rem;
+    padding: 0 2rem;
   }
   .contactrow {
     display: flex;
-    max-width: 1136px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
+    background-color: #232533;
   }
   .contactcolumn {
     width: 34%;
     padding-top: 2rem;
     padding-left: 2rem;
+    margin-left: -2rem;
+    padding-bottom: 2rem;
     color: #fff;
     background-color:#414557;
     text-align: center;
   }
   .contactcolumn img {
-    border-bottom: 3px solid #FEC158;
+    border-bottom: 2px solid #FEC158;
+    width: 369px;
+    height: 508px;
   }
   .contactcolumn2 {
     width: 66%;
   }
   .contacticons {
     margin-top: -3rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
   .contacticons a {
     padding-right:.8rem;
@@ -185,8 +196,8 @@ header {
   }
   .formcontainer {
     background-color: #323445;
-    padding: 30px 30px 30px 30px;
-    margin: 2rem 2rem 2rem 4rem;
+    padding: 30px;
+    margin: 2rem -2rem 2rem 4rem;
   }
   .formcontainer label {
     color: #fff;
@@ -326,7 +337,6 @@ header {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-
 
   @media (max-width: 740px) {
     .contacttitle h1 {
