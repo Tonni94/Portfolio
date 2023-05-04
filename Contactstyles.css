@@ -328,8 +328,8 @@ header {
   }
 
 
-  @media (max-width: 400px) {
-  .contacttitle h1 {
+  @media (max-width: 740px) {
+    .contacttitle h1 {
       padding: 0 1rem 0 1rem;
     }
     .formcontainer {
@@ -370,16 +370,16 @@ header {
       visibility: hidden;
       margin: 0;
       padding: 0;
-      width: 100%;
-      width: 600px;
+      width: 0;
     }
     .contacticons {
       margin-top: -1rem;
       visibility: visible;
       display: flex;
-      position: relative;
+      position: absolute;
       color: #fff;
-      margin-left: 12rem;
+      transform: translateX(-70%);
+      left: 50%;
     }
     .contacticons a {
       color: #c4c4c4;
