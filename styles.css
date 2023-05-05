@@ -578,7 +578,7 @@ margin-left: -40%;
   transform-origin: bottom left;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 880px) {
 
   .navbar {
     height: 70px;
@@ -694,7 +694,6 @@ margin-left: -40%;
   padding-bottom: 1.5rem;
   margin-top: 3rem;
   }
-  
   .ProjectsText2 {
   padding-right: 2rem;
   padding-left: 2rem;
@@ -792,6 +791,9 @@ margin-left: -40%;
 }
 
 @media (max-width: 770px) {
+  :hover {
+    display: none;
+  }
   .logo {
     display: inline-block;
     vertical-align: middle;
@@ -834,7 +836,7 @@ margin-left: -40%;
   margin-top: 3rem;
   }
 }
-/* oli 419 */
+
 @media (max-width: 600px) {
   .logo {
     display: inline-block;
@@ -893,7 +895,7 @@ margin-left: -40%;
   }
   .mockup1 img {
     width: 100%;
-    margin-left: -4rem;
+    margin-left: -4.2rem;
   }
   .mockup2 {
     padding-left: 1rem;
@@ -922,9 +924,6 @@ margin-left: -40%;
   .slides{
     width: 500%;
     display: flex;
-  }
-  .slides input{
-    display: none;
   }
   .slides p {
     margin-left: 1rem;
@@ -986,7 +985,7 @@ margin-left: -40%;
   .footer-col-3 {
     margin-left: 1.5rem;
   }
-
+}
 
 @media (max-width: 510px) {
   .footer-col {
@@ -1032,8 +1031,6 @@ margin-left: -40%;
   margin-top: 2rem;
 }
 
-@media (hover: hover) {
-}
 @media (hover:none) {
 }
 }
