@@ -987,14 +987,37 @@ margin-left: -40%;
     margin-left: 1.5rem;
   }
 
-@media (max-width: 449px) {
-  .slides h3 {
-    font-size: 18px;
+
+@media (max-width: 510px) {
+  .footer-col {
+    width: 93.5%;
+    visibility: visible;
+    position: absolute;
+    text-align: center;
+    
+  }
+  .footer-col-2 {
+    width: 50%;
+    margin-top: 10rem;
+    visibility: visible;
+    position: relative;
+    
+    text-align: center;
+  }
+  .footer-col-3 {
+    width: 50%;
+    margin-top: 10rem;
+    visibility: visible;
+    position: relative;
+    margin-left: 0;
+    text-align: center;
   }
 }
+
 @media (max-width: 373px) {
 .slides h3 {
     margin-left: .5rem;
+    font-size: 18px;
   }
 .slides p {
   margin-left: .5rem;
@@ -1007,5 +1030,13 @@ margin-left: -40%;
 }
 .manual-btn {
   margin-top: 2rem;
-}    
+}
+
+@mixin on-hover {
+  @media (hover: hover) and (pointer: fine) {
+      &:hover {
+          @content;
+      }
+  }
+}
 }
