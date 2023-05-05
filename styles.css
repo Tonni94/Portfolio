@@ -1032,5 +1032,35 @@ margin-left: -40%;
 }
 
 @media (hover:none) {
+  .logo:hover, .logo:focus, .logo:active {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  .Title-text a.button:hover, .Title-text a.button:focus, .Title-text a.button:active {
+    -webkit-animation-name: buzz-out-on-hover;
+    animation-name: buzz-out-on-hover;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+}
+.links a::after {
+  content: '';
+  position: absolute;
+  width: 102%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FEC158;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 }
