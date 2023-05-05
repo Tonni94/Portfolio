@@ -1032,11 +1032,8 @@ margin-left: -40%;
   margin-top: 2rem;
 }
 
-@mixin on-hover {
-  @media (hover: hover) and (pointer: fine) {
-      &:hover {
-          @content;
-      }
-  }
+@media (hover: hover) {
+}
+@media (hover:none) {
 }
 }
