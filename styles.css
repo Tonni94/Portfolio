@@ -352,12 +352,12 @@ width: 100%;
 margin-top: -1.4rem;
 padding-left: 2rem;
 }
-.explore span {
+body.hasHover .explore span {
 color: #FEC158;
 margin-left: .5rem;
 font-size: 25px;
 }
-.explore a {
+body.hasHover .explore a {
 color: #FEC158;
 display: inline-block;
 text-decoration: none;
@@ -659,16 +659,6 @@ background-color: #FEC158;
   .mockup1 img {
   padding-bottom: 1.5rem;
   }
-  .mockup1 figure img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  .mockup1 figure:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
   .ProjectsText {
     padding-right: 2rem;
     padding-left: 2rem;
@@ -721,22 +711,6 @@ background-color: #FEC158;
   display: inline-block;
   text-decoration: none;
   position: relative;
-  }
-  .explore a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FEC158;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-  }
-  .explore a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
   }
   .slider {
     overflow: hidden;
@@ -875,7 +849,7 @@ background-color: #FEC158;
     padding-right: 1rem;
   }
   .ProjectsText {
-    padding-left: 2.3rem;
+    padding-left: 2.5rem;
     padding-right: 1rem;
     text-align: start;
   }
@@ -885,7 +859,7 @@ background-color: #FEC158;
   }
   .ProjectsText2 {
     padding-left: 1rem;
-    padding-right: 4.7rem;
+    padding-right: 2rem;
     text-align: end;
   }
   .ProjectsText2 p {
@@ -909,13 +883,15 @@ background-color: #FEC158;
     padding-right: 1rem;
     display: flex;
     text-align: left;
-    justify-content: center;
+    justify-content: end;
     margin: 0;
+    margin-right: -3rem;
   }
   .mockup2 img {
   padding-bottom: .5rem;
   margin-top: 3rem;
   width: 100%;
+  margin-right: -4.9rem;
   }
   .explore {
     margin-top: 4rem;
@@ -1034,4 +1010,53 @@ background-color: #FEC158;
 .manual-btn {
   margin-top: 2rem;
 }
+.mockup1 {
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  display: flex;
+  }
+  .mockup1 img {
+  padding-bottom: 1.5rem;
+  }
+  .ProjectsText {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    color: #fff;
+  }
+  .ProjectsText h2 {
+    font-size: 32px;
+  }
+  .ProjectsText p {
+    color: #fff;
+    display: flex;
+    text-align: start;
+    padding-bottom: 3rem;
+  }
+  .mockup2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: end;
+    margin: 0;
+  }
+  .mockup2 img {
+  padding-bottom: 1.5rem;
+  margin:0;
+  }
+  .ProjectsText2 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  justify-content: end;
+  color: #fff;
+  text-align: end;
+  }
+  .ProjectsText2 p {
+  display: flex;
+  justify-content: end;
+  }
+  .ProjectsText2 h2 {
+  font-size: 32px;
+  }
 }
