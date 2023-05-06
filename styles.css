@@ -992,6 +992,9 @@ body.hasHover .footer-col-3 a:hover::after {
     margin-left: 0;
     text-align: center;
   }
+  .footer-col-3 a {
+    text-align: left;
+  }
 }
 
 @media (max-width: 373px) {
