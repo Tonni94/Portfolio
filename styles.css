@@ -55,7 +55,7 @@ padding: 0 2rem;
   padding-left: 1rem;
   padding-right: 2rem;
 }
-.logo {
+body.hasHover .logo {
 display: inline-block;
 vertical-align: middle;
 -webkit-transform: perspective(1px) translateZ(0);
@@ -92,7 +92,7 @@ transform: translateY(8px);
   margin: 0 auto;
   padding: 0 2rem;
 }
-.Title-text a.button {
+body.hasHover .Title-text a.button {
 position: absolute;
 background-color: #fff;
 color: #232533;
@@ -230,7 +230,7 @@ display: inline-block;
 text-decoration: none;
 position: relative;
 }
-.links a::after {
+body.hasHover .links a::after {
 content: '';
 position: absolute;
 width: 102%;
@@ -280,7 +280,7 @@ display: flex;
 margin-left: -4.9rem;
 padding-bottom: 1.5rem;
 }
-.mockup1 figure img {
+body.hasHover .mockup1 figure img {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: .3s ease-in-out;
@@ -318,7 +318,7 @@ margin-top: -17rem;
 margin-right: -4.9rem;
 padding-bottom: 1.5rem; 
 }
-.mockup2 figure img {
+body.hasHover .mockup2 figure img {
 -webkit-transform: scale(1);
 transform: scale(1);
 -webkit-transition: .3s ease-in-out;
@@ -363,7 +363,7 @@ display: inline-block;
 text-decoration: none;
 position: relative;
 }
-.explore a::after {
+body.hasHover .explore a::after {
 content: '';
 position: absolute;
 width: 100%;
@@ -375,7 +375,7 @@ background-color: #FEC158;
 transform-origin: bottom right;
 transition: transform 0.25s ease-out;
 }
-.explore a:hover::after {
+body.hasHover .explore a:hover::after {
 transform: scaleX(1);
 transform-origin: bottom left;
 }
