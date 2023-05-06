@@ -875,12 +875,22 @@ background-color: #FEC158;
     padding-right: 1rem;
   }
   .ProjectsText {
-    padding-left: 1rem;
+    padding-left: 2.3rem;
     padding-right: 1rem;
+    text-align: start;
+  }
+  .ProjectsText p {
+    text-align: start;
+    justify-content: start;
   }
   .ProjectsText2 {
     padding-left: 1rem;
-    padding-right: 1rem;
+    padding-right: 4.7rem;
+    text-align: end;
+  }
+  .ProjectsText2 p {
+    text-align: end;
+    justify-content: end;
   }
   .mockup1 {
   padding-top: 3rem;
@@ -888,24 +898,24 @@ background-color: #FEC158;
   padding-right: 1rem;
   margin: 0;
   display: flex;
+  text-align: center;
   }
   .mockup1 img {
     width: 100%;
-    margin-left: -4.2rem;
+    padding-bottom: .5rem;
   }
   .mockup2 {
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
-    justify-content: end;
+    text-align: left;
+    justify-content: center;
     margin: 0;
-    margin-right: -4.5rem;
   }
   .mockup2 img {
-  padding-bottom: 1.5rem;
+  padding-bottom: .5rem;
   margin-top: 3rem;
   width: 100%;
-  margin-right: -3rem;
   }
   .explore {
     margin-top: 4rem;
