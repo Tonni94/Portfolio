@@ -1017,6 +1017,10 @@ background-color: #FEC158;
   margin: 0;
   display: flex;
   }
+  .mockup1 figure {
+    margin-right: -3.2rem;
+    margin-left: 2rem;
+  }
   .mockup1 img {
   padding-bottom: 1.5rem;
   }
@@ -1024,6 +1028,7 @@ background-color: #FEC158;
     padding-right: 1rem;
     padding-left: 1rem;
     color: #fff;
+    text-align: end;
   }
   .ProjectsText h2 {
     font-size: 32px;
@@ -1031,7 +1036,8 @@ background-color: #FEC158;
   .ProjectsText p {
     color: #fff;
     display: flex;
-    text-align: start;
+    text-align: end;
+    justify-content: end;
     padding-bottom: 3rem;
   }
   .mockup2 {
@@ -1041,6 +1047,10 @@ background-color: #FEC158;
     justify-content: end;
     margin: 0;
   }
+  .mockup2 figure {
+    margin-left: -.7rem;
+    margin-right: -.5rem;
+  }
   .mockup2 img {
   padding-bottom: 1.5rem;
   margin:0;
@@ -1048,13 +1058,14 @@ background-color: #FEC158;
   .ProjectsText2 {
   padding-right: 1rem;
   padding-left: 1rem;
-  justify-content: end;
+  justify-content: center;
   color: #fff;
-  text-align: end;
+  text-align: start;
   }
   .ProjectsText2 p {
   display: flex;
-  justify-content: end;
+  justify-content: start;
+  text-align: start;
   }
   .ProjectsText2 h2 {
   font-size: 32px;
