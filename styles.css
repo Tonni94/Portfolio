@@ -68,7 +68,7 @@ transition-property: transform;
 -webkit-transition-timing-function: ease-out;
 transition-timing-function: ease-out;
 }
-.logo:hover, .logo:focus, .logo:active {
+body.hasHover .logo:hover, .logo:focus, .logo:active {
 -webkit-transform: translateY(8px);
 transform: translateY(8px);
 }
@@ -192,7 +192,7 @@ box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   transform: translateX(-1px) rotate(0);
 }
 }
-.Title-text a.button:hover, .Title-text a.button:focus, .Title-text a.button:active {
+body.hasHover .Title-text a.button:hover, .Title-text a.button:focus, .Title-text a.button:active {
 -webkit-animation-name: buzz-out-on-hover;
 animation-name: buzz-out-on-hover;
 -webkit-animation-duration: 0.75s;
@@ -242,7 +242,7 @@ background-color: #FEC158;
 transform-origin: bottom right;
 transition: transform 0.25s ease-out;
 }
-.links a:hover::after {
+body.hasHover .links a:hover::after {
 transform: scaleX(1);
 transform-origin: bottom left;
 }
@@ -286,7 +286,7 @@ padding-bottom: 1.5rem;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
-.mockup1 figure:hover img {
+body.hasHover .mockup1 figure:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -324,7 +324,7 @@ transform: scale(1);
 -webkit-transition: .3s ease-in-out;
 transition: .3s ease-in-out;
 }
-.mockup2 figure:hover img {
+body.hasHover .mockup2 figure:hover img {
 -webkit-transform: scale(1.1);
 transform: scale(1.1);
 }
