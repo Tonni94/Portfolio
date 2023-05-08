@@ -33,12 +33,17 @@ figcaption {
   font-family: Helvetica Neue Medium Extended;
   src: url('Fontit/Helvetica-Neue-Font/Helvetica Neue Medium Extended.ttf');
 }
-
+body{
+  background: #323445;
+  overflow-x: hidden
+}
+html {
+overflow-x: hidden
+}
 /*Navbar*/
 
 header {
     position: relative;
-    padding: 0 2rem;
   }
   .navbar {
       width: 100%;
@@ -48,14 +53,14 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 1rem;
+      padding-left: 2rem;
       padding-right: 2rem;
   }
   .links li {
     display: inline-block;
     padding-left: 2rem;
 }
-  .logo {
+body.hasHover .logo {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -68,7 +73,7 @@ header {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .logo:hover, .logo:focus, .logo:active {
+  body.hasHover .logo:hover, .logo:focus, .logo:active {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
@@ -78,7 +83,7 @@ header {
     text-decoration: none;
     position: relative;
   }
-  .links a::after {
+  body.hasHover .links a::after {
     content: '';
     position: absolute;
     width: 102%;
@@ -90,7 +95,7 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .links a:hover::after {
+  body.hasHover .links a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -149,7 +154,6 @@ header {
     display: flex;
   }
   .projectcolumn p {
-    margin-top: 2rem;
     margin-bottom: 2rem;
   }
   .projectlist {
@@ -202,7 +206,7 @@ header {
     display: inline-block;
     position: relative;
   }
-  .footer-col a::after {
+  body.hasHover .footer-col a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -214,7 +218,7 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .footer-col a:hover::after {
+  body.hasHover .footer-col a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -235,7 +239,6 @@ header {
   .row {
     display: flex;
   }
-  
   .footer-col-2 {
     width: auto;
   }
@@ -271,7 +274,7 @@ header {
     display: inline-block;
     position: relative;
   }
-  .footer-col-2 a::after {
+  body.hasHover .footer-col-2 a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -283,11 +286,11 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .footer-col-2 a:hover::after {
+  body.hasHover .footer-col-2 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .footer-col-3 a::after {
+  body.hasHover .footer-col-3 a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -299,7 +302,143 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .footer-col-3 a:hover::after {
+  body.hasHover .footer-col-3 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  @media (max-width: 600px) {
+    .links li {
+      padding-left: 1rem;
+    }
+    .navbar {
+      padding: 0 1rem;
+    }
+    }
+
+  @media (max-width: 510px) {
+    .container {
+      padding: 0 1rem;
+    }
+    .footer {
+      padding: 30px 0;
+    }
+    .footer-col {
+      width: 93.5%;
+      visibility: visible;
+      position: absolute;
+      text-align: center;
+    }
+    .footer-col-2 {
+      width: 50%;
+      margin-top: 10rem;
+      visibility: visible;
+      position: relative;
+      text-align: center;
+    }
+    .footer-col-3 {
+      width: 50%;
+      margin-top: 10rem;
+      visibility: visible;
+      position: relative;
+      margin-left: 0;
+      text-align: center;
+    }
+    .footer-col-3 a {
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .firstproject {
+      margin-top: 5rem;
+      padding: 0 1rem;
+      margin-bottom: -1.5rem;
+    }
+    .firstproject h1 {
+      width: 340px;
+      margin-bottom: 10rem;
+      font-size: 25px;
+    }
+  .firstproject img {
+  width: 100%;
+  align-content: center;
+  margin: 13rem 3rem 0 -5rem;
+  padding: 0;
+  visibility: visible;
+  }
+  .projectrow {
+    padding: 0;
+  }
+  .projectcolumn {
+    margin-top: 3rem;
+    padding: 0;
+    width: 100%;
+    margin-left: -12.5rem;
+  }
+  .projectcolumn2 {
+    visibility: visible;
+    padding: 0;
+    margin-top: 0;
+  }
+  .projectcolumn p{
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding-left: 1rem;
+  }
+  .secondproject {
+    padding: 0 1rem;
+  }
+  .secondproject img {
+    width: 255%;
+    visibility: visible;
+    margin-top: 31rem;
+    margin-bottom: 3rem;
+    padding-left: 4rem;
+  }
+  .projectlist {
+    display: none;
+  }
+  .thirdprojectt {
+    padding: 0 1rem;
+  }
+  .thirdprojectt img {
+    width: 500px;
+    margin-left: -6rem;
+  }
+  @media (max-width: 390px) {
+    .projectcolumn{
+    margin-left: -12.2rem;
+  }
+  }
+  @media (max-width: 380px) {
+    .projectcolumn{
+    margin-left: -11.88rem;
+    }
+    .secondproject img {
+      margin-top: 34rem;
+    }
+  }
+  .secondproject img {
+    margin-left: -5.2rem;
+  }
+}
+@media (max-width: 370px) {
+  .projectcolumn{
+  margin-left: -11.55rem;
+  }
+}
+@media (max-width: 360px) {
+  .projectcolumn{
+  margin-left: -11.3rem;
+}
+}
+@media (max-width: 350px) {
+  .projectcolumn{
+  margin-left: -10.99rem;
+}
+.secondproject img {
+  margin-left: -5.1rem;
+  margin-top: 35rem;
+}
+}
