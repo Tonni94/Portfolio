@@ -59,7 +59,7 @@ header {
     display: inline-block;
     padding-left: 2rem;
 }
-  .logo {
+body.hasHover .logo {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -72,7 +72,7 @@ header {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .logo:hover, .logo:focus, .logo:active {
+body.hasHover .logo:hover, .logo:focus, .logo:active {
     -webkit-transform: translateY(8px);
     transform: translateY(8px);
   }
@@ -82,7 +82,7 @@ header {
     text-decoration: none;
     position: relative;
   }
-  .links a::after {
+  body.hasHover .links a::after {
     content: '';
     position: absolute;
     width: 102%;
@@ -94,7 +94,7 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .links a:hover::after {
+  body.hasHover .links a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -116,7 +116,7 @@ header {
   }
   .contacttitle a {
     color: #FEC158;
-    font-size: 30px;
+    font-size: 50px;
   }
   .contactmain {
     width: 100%;
@@ -147,6 +147,7 @@ header {
     border-bottom: 2px solid #FEC158;
     width: 369px;
     height: 508px;
+    object-fit:fill;
   }
   .contactcolumn2 {
     width: 66%;
@@ -163,7 +164,7 @@ header {
     color: #323445;
     text-align: center;
   }
-  .contacticons a:hover {
+  body.hasHover .contacticons a:hover {
     color: #FEC158;
   }
   
@@ -188,7 +189,7 @@ header {
     src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
     font-size: 18px;
   }
-  input[type=submit]:hover {
+  body.hasHover input[type=submit]:hover {
     background-color: #fecd79;
     font-family: Merriweather;
     src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
@@ -236,7 +237,7 @@ header {
     display: inline-block;
     position: relative;
   }
-  .footer-col a::after {
+  body.hasHover .footer-col a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -248,7 +249,7 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .footer-col a:hover::after {
+  body.hasHover .footer-col a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -305,7 +306,7 @@ header {
     display: inline-block;
     position: relative;
   }
-  .footer-col-2 a::after {
+  body.hasHover .footer-col-2 a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -317,11 +318,11 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .footer-col-2 a:hover::after {
+  body.hasHover .footer-col-2 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .footer-col-3 a::after {
+  body.hasHover .footer-col-3 a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -333,12 +334,22 @@ header {
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  .footer-col-3 a:hover::after {
+  body.hasHover .footer-col-3 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
 
+  @media (max-width: 850px) {
+  .contacticons a{
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+  }
+
   @media (max-width: 740px) {
+    .navbar {
+      padding: 0 1rem;
+    }
     .contacttitle h1 {
       padding: 0 1rem 0 1rem;
     }
@@ -395,3 +406,52 @@ header {
       color: #c4c4c4;
     }
   }
+  @media (max-width: 600px) {
+    .contacttitle h1 {
+      font-size: 40px;
+    }
+    .contacttitle a {
+      font-size: 40px;
+    }
+    .links li {
+      padding-left: 1rem;
+    }
+    .navbar {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 510px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .footer {
+        padding: 30px 0;
+      }
+      .footer-col {
+        width: 93.5%;
+        visibility: visible;
+        position: absolute;
+        text-align: center;
+      }
+      .footer-col-2 {
+        width: 50%;
+        margin-top: 10rem;
+        visibility: visible;
+        position: relative;
+        text-align: center;
+      }
+      .footer-col-3 {
+        width: 50%;
+        margin-top: 10rem;
+        visibility: visible;
+        position: relative;
+        margin-left: 0;
+        text-align: center;
+      }
+      .footer-col-3 a {
+        text-align: left;
+      }
+    }
+
+  }
+ 
