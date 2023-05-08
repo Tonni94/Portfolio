@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -94,7 +94,13 @@ header {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-
+  body{
+    background: #323445;
+    overflow-x: hidden
+}
+html {
+  overflow-x: hidden
+}
 /*Success page*/
 
 .successmain h1 {
@@ -243,4 +249,46 @@ max-width: 1200px;
   .footer-col-3 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+
+  @media (max-width: 510px) {
+    .container {
+      padding: 0 1rem;
+    }
+    .footer {
+      padding: 30px 0;
+    }
+    .footer-col {
+      width: 93.5%;
+      visibility: visible;
+      position: absolute;
+      text-align: center;
+    }
+    .footer-col-2 {
+      width: 50%;
+      margin-top: 10rem;
+      visibility: visible;
+      position: relative;
+      text-align: center;
+    }
+    .footer-col-3 {
+      width: 50%;
+      margin-top: 10rem;
+      visibility: visible;
+      position: relative;
+      margin-left: 0;
+      text-align: center;
+    }
+    .footer-col-3 a {
+      text-align: left;
+    }
+  }
+  @media (max-width: 600px) {
+    .links li {
+      padding-left: 1rem;
+    }
+    .navbar {
+      padding: 0 1rem;
+    }
   }
