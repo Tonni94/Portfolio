@@ -33,12 +33,18 @@ figcaption {
   font-family: Helvetica Neue Medium Extended;
   src: url('Fontit/Helvetica-Neue-Font/Helvetica Neue Medium Extended.ttf');
 }
+body{
+  background: #323445;
+  overflow-x: hidden
+}
+html {
+overflow-x: hidden
+}
 
 /*Navbar*/
 
 header {
     position: relative;
-    padding: 0 2rem;
   }
   .navbar {
       width: 100%;
@@ -48,8 +54,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-left: 1rem;
-      padding-right: 2rem;
+      padding: 0 2rem;
   }
   .links li {
     display: inline-block;
@@ -110,14 +115,13 @@ header {
   }
   .aboutme a {
     color: #FEC158;
-    font-size: 30px;
+    font-size: 50px;
   }
   .aboutme h1 {
     color: #fff;
     font-size: 50px;
     margin-top: 7rem;
     margin-bottom: 3rem;
-  
   }
   .aboutrow {
     display: flex;
@@ -130,6 +134,7 @@ header {
     padding-right: 2rem;
     margin-top: 3rem;
     color: #fff;
+    
   }
   .aboutcolumn2 {
     width: 40%;
@@ -137,25 +142,37 @@ header {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
+  .aboutcolumn2 img {
+    width: 100%;
+  }
   .aboutcolumn h3 {
     display: flex;
     font-size: 25px;
   }
   .aboutcolumn p {
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
   }
-  .listatesti {
-    display: flex;
-    justify-content: space-between;
+  .aboutlist {
+  display: flex;
+  justify-content: space-between;
+   max-width: 600px;
+   padding-bottom: 3rem;
   }
-  .listatesti a {
+  .aboutlist a {
     color: #FEC158;
     font-size: 22px;
   }
-  .listatesti figcaption {
+  .aboutlist li {
+    color: #fff;
+  }
+  .aboutlist li:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .aboutlist figcaption {
   font-size: 22px;
   padding-bottom: 1rem;
+  color: #fff;
   }
 
   /*Footer*/
@@ -284,4 +301,164 @@ header {
   .footer-col-3 a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  @media (max-width: 950px) { 
+    .aboutrow {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .aboutcolumn {
+      width: 60%;
+      padding-left: 2rem;
+      padding-right: 1rem;
+      margin-top: 3rem;
+      color: #fff;
+    }
+    .aboutcolumn2 {
+      width: 40%;
+      padding-right: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .aboutcolumn h3 {
+      display: flex;
+      font-size: 25px;
+    }
+    .aboutcolumn p {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+    .aboutlist {
+    display: flex;
+    justify-content: space-between;
+     width: 900px;
+     padding-bottom: 3rem;
+     margin-top: 6rem;
+    }
+    .aboutlist a {
+      color: #FEC158;
+      font-size: 22px;
+    }
+    .aboutlist li {
+      color: #fff;
+    }
+    .aboutlist figcaption {
+    font-size: 22px;
+    padding-bottom: 1rem;
+    color: #fff;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .aboutcolumn h3 {
+      width: 600px;
+    }
+    .aboutcolumn p {
+      font-size: 18px;
+      margin-top: 3.9rem;
+    }
+    .aboutcolumn2 img {
+      margin-top: 11rem;
+    }
+    .aboutlist figcaption {
+      font-size: 20px;
+    }
+    .aboutlist {
+      width: 500px;
+      margin-top: 8rem;
+    }
+
+  @media (max-width: 620px) {
+    .aboutcolumn {
+      padding-left: 1rem;
+    }
+    .aboutcolumn2 {
+      padding-right: 1rem;
+    }
+    .aboutcolumn h3 {
+      width: 480px;
+    }
+      .aboutme h1 {
+        font-size: 40px;
+      }
+      .aboutme a {
+        font-size: 40px;
+      }
+    .links li {
+      padding-left: 1rem;
+    }
+    .navbar {
+      padding: 0 1rem;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .container {
+      padding: 0 1rem;
+    }
+    .footer {
+      padding: 30px 0;
+    }
+    .footer-col {
+      width: 93.5%;
+      visibility: visible;
+      position: absolute;
+      text-align: center;
+    }
+    .footer-col-2 {
+      width: 50%;
+      margin-top: 10rem;
+      visibility: visible;
+      position: relative;
+      text-align: center;
+    }
+    .footer-col-3 {
+      width: 50%;
+      margin-top: 10rem;
+      visibility: visible;
+      position: relative;
+      margin-left: 0;
+      text-align: center;
+    }
+    .footer-col-3 a {
+      text-align: left;
+    }
+    .aboutcolumn h3 {
+      width: 450px;
+    }
+    .aboutcolumn p {
+      margin-top: 2.1rem;
+    }
+    .aboutlist {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 469px) {
+    .aboutcolumn h3 {
+      width: 350px;
+    }
+  }
+  @media (max-width: 380px) {
+    .aboutcolumn h3 {
+      font-size: 22px;
+  }
+  .aboutcolumn p {
+    font-size: 16px;
+    margin-top: 3.2rem;
+  }
+  
+  .aboutlist {
+    display: flex;
+    width: 100%;
+  }
+  .aboutcolumn2 img {
+    margin-top: 13rem;
+  }
+  .aboutlist .figure {
+    width: 250px;
+  }
+}
   }
