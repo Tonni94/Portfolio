@@ -320,8 +320,88 @@ body.hasHover .logo {
     .navbar {
       padding: 0 1rem;
     }
+      .firstproject2 {
+        margin-top: 5rem;
+        padding: 0 1rem;
+        margin-bottom: -1.5rem;
+      }
+      .firstproject2 h1 {
+        width: 340px;
+        margin-bottom: 8rem;
+        font-size: 25px;
+      }
+    .firstproject2 img {
+    width: 100%;
+    align-content: center;
+    margin: 13rem 3rem 0 -3rem;
+    padding: 0;
+    visibility: visible;
+    }
+    .project2row {
+      padding: 0;
+    }
+    .project2column {
+      margin-top: 4rem;
+      padding: 0;
+      width: 100%;
+      margin-left: -12.5rem;
+    }
+    .project2column2 {
+      visibility: visible;
+      padding: 0;
+      margin-top: 0;
+    }
+    .project2column p{
+      width: 110%;
+      margin: 0 0 2rem 0;
+      margin-left: -3.3rem;
+    }
+    .secondproject2 {
+      padding: 0 1rem;
+    }
+    .secondproject2 img {
+      width: 255%;
+      visibility: visible;
+      margin-top: 26rem;
+      margin-bottom: 3rem;
+      padding-left: 5rem;
+    }
+    .project2list {
+      display: none;
+    }
+    .thirdprojectt2 {
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .thirdprojectt2 img {
+      width: 600px;
+      margin-left: -1rem;
+    }
+  }
+  
+    @media (max-width: 580px) {
+      .project2column p {
+        margin-left: -2.85rem;
+      }
+    }
+    @media (max-width: 560px) {
+      .project2column p {
+        margin-left: -2.4rem;
+        width: 105%;
+      }
+    }
+    @media (max-width: 540px) {
+      .project2column p {
+        margin-left: -2rem;
+      }
+    }
+    @media (max-width: 520px) {
+      .project2column p {
+        margin-left: -1.7rem;
+      }
     }
 
+    /* FOOTER */
   @media (max-width: 510px) {
     .container {
       padding: 0 1rem;
@@ -354,71 +434,81 @@ body.hasHover .logo {
       text-align: left;
     }
   }
-  @media (max-width: 400px) {
-    .firstproject2 {
-      margin-top: 5rem;
-      padding: 0 1rem;
-      margin-bottom: -1.5rem;
+    @media (max-width: 500px) {
+      .project2column p {
+        margin-left: -1.25rem;
+      }
+      .secondproject2 img {
+        padding-left: 4rem;
+      }
     }
-    .firstproject2 h1 {
-      width: 340px;
-      margin-bottom: 10rem;
-      font-size: 25px;
+    @media (max-width: 480px) {
+      .project2column p {
+        margin-left: -.8rem;
+        width: 100%;
+      }
+      .secondproject2 img {
+        margin-top: 28rem
+      }
     }
-  .firstproject2 img {
-  width: 100%;
-  align-content: center;
-  margin: 13rem 3rem 0 -5rem;
-  padding: 0;
-  visibility: visible;
+    @media (max-width: 460px) {
+      .project2column p{
+      margin-left: -.3rem;
+    }
+    .firstproject2 img {
+      margin: 14rem 3rem 0 -3rem;
+    }
   }
-  .project2row {
-    padding: 0;
+  @media (max-width: 440px) {
+    .project2column p{
+    margin-left: .15rem;
   }
-  .project2column {
-    margin-top: 3rem;
-    padding: 0;
-    width: 100%;
-    margin-left: -12.5rem;
-  }
-  .project2column2 {
-    visibility: visible;
-    padding: 0;
-    margin-top: 0;
-  }
+}
+@media (max-width: 420px) {
   .project2column p{
-    width: 100%;
-    margin: 0 0 2rem 0;
-    padding-left: 1rem;
-  }
-  .secondproject2 {
-    padding: 0 1rem;
-  }
-  .secondproject2 img {
-    width: 255%;
-    visibility: visible;
-    margin-top: 31rem;
-    margin-bottom: 3rem;
-    padding-left: 4rem;
-  }
-  .project2list {
-    display: none;
-  }
-  .thirdprojectt2 {
-    padding: 0 1rem;
-  }
-  .thirdprojectt2 img {
-    width: 500px;
-    margin-left: -6rem;
-  }
-  @media (max-width: 390px) {
-    .project2column{
-    margin-left: -12.2rem;
-  }
-  }
+  margin-left: .75rem;
+}
+.secondproject2 img {
+  padding-left: 3.6rem;
+}
+}
+@media (max-width: 400px) {
+  .project2column p{
+  margin-left: 1.2rem;
+  width: 99%;
+}
+.secondproject2 img {
+  margin-top: 31rem;
+}
+}
+@media (max-width: 380px) {
+  .project2column p{
+  margin-left: .5rem;
+}
+}
+    @media (max-width: 390px) {
+      .project2column{
+      margin-left: -2.2rem;
+      }
+      .project2column{
+      margin-left: -12.2rem;
+    }
+    }
+    @media (max-width: 380px) {
+      .project2column {
+      margin-left: -11.88rem;
+      }
+      .secondproject2 img {
+        margin-top: 34rem;
+      }
+    }
+    .secondproject2 img {
+      padding-left: 4.4rem;
+    }
+  
   @media (max-width: 380px) {
     .project2column{
-    margin-left: -11.88rem;
+    margin-left: -11.2rem;
     }
     .secondproject2 img {
       margin-top: 34rem;
@@ -427,26 +517,39 @@ body.hasHover .logo {
   .secondproject2 img {
     margin-left: -5.2rem;
   }
-}
-@media (max-width: 370px) {
-  .project2column{
-  margin-left: -11.55rem;
+  @media (max-width: 370px) {
+    .project2column {
+    margin-left: -10.6rem;
+    }
   }
-}
 @media (max-width: 360px) {
-  .project2column{
-  margin-left: -11.3rem;
+  .firstproject2 h1 {
+    font-size: 22px;
+  }
+  .project2column {
+  margin-left: -10.5rem;
 }
 }
 @media (max-width: 350px) {
-  .project2column{
-  margin-left: -10.99rem;
+  .project2column {
+  margin-left: -10.2rem;
 }
 .secondproject2 img {
-  margin-left: -5.1rem;
+  margin-left: -4.9rem;
   margin-top: 35rem;
 }
 }
-
-    
-  
+@media (max-width: 340px) {
+  .project2column {
+  margin-left: -9.9rem;
+}
+}
+@media (max-width: 330px) {
+  .project2column {
+  margin-left: -9.7rem;
+}
+.secondproject2 img {
+  margin-left: -4.8rem;
+  margin-top: 35rem;
+}
+}
