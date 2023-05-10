@@ -25,9 +25,8 @@ li {
 src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
 }
 .links a {
-  text-decoration: none;
   color: white;
-  font-size: 1rem;
+  src: url('Fontit/Merriweather/Merriweather-Regular.ttf');
 }
 .label {
 font-family: Helvetica Neue Medium Extended;
@@ -42,7 +41,6 @@ src: url('Fontit/Helvetica-Neue-Font/Helvetica Neue Medium Extended.ttf');
 
 header {
 position: relative;
-padding: 0 2rem;
 }
 .navbar {
   width: 100%;
@@ -52,7 +50,7 @@ padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-right: 2rem;
 }
 body.hasHover .logo {
@@ -72,16 +70,16 @@ body.hasHover .logo:hover, .logo:focus, .logo:active {
 -webkit-transform: translateY(8px);
 transform: translateY(8px);
 }
-
-/*Front page*/
-
 .links li {
   display: inline-block;
   padding-left: 2rem;
 }
+
+/*Front page*/
+
 .Title-text a {
   color: #FEC158;
-  font-size: 30px;
+  font-size: 50px;
 }
 .Title-text { 
   position: relative;
@@ -92,7 +90,7 @@ transform: translateY(8px);
   margin: 0 auto;
   padding: 0 2rem;
 }
-body.hasHover .Title-text a.button {
+.Title-text a.button {
 position: absolute;
 background-color: #fff;
 color: #232533;
@@ -107,7 +105,6 @@ vertical-align: middle;
 transform: perspective(1px) translateZ(0);
 box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-
 @-webkit-keyframes buzz-out-on-hover {
 10% {
   -webkit-transform: translateX(3px) rotate(2deg);
@@ -215,7 +212,8 @@ animation-iteration-count: 1;
   height: 5px;
   width: 90px;
   position: absolute;
-  padding: 0 2rem;
+  padding: 0rem 3rem;
+  margin-top: .5rem;
 }
 .Title-text img {
 margin-top: -12rem;
@@ -265,7 +263,7 @@ padding-right: 2rem;
 padding-left: 2rem;
 position: relative;
 }
-.ProjectsContent h1 {
+.ProjectsContent h2 {
 font-size: 38px;
 }
 .mockup1 {
@@ -297,7 +295,7 @@ body.hasHover .mockup1 figure:hover img {
   padding-left: 2rem;
   color: #fff;
 }
-.ProjectsText h2 {
+.ProjectsText h3 {
   font-size: 32px;
 }
 .ProjectsText p {
@@ -342,7 +340,7 @@ text-align: end;
 display: flex;
 justify-content: end;
 }
-.ProjectsText2 h2 {
+.ProjectsText2 h3 {
 font-size: 32px;
 }
 .explore {
@@ -352,12 +350,12 @@ width: 100%;
 margin-top: -1.4rem;
 padding-left: 2rem;
 }
-body.hasHover .explore span {
+.explore span {
 color: #FEC158;
 margin-left: .5rem;
 font-size: 25px;
 }
-body.hasHover .explore a {
+.explore a {
 color: #FEC158;
 display: inline-block;
 text-decoration: none;
@@ -471,10 +469,7 @@ background-color: #FEC158;
   color: #fff;
   margin-bottom: 1.1rem;
 }
-.footer-col a {
-  display: inline-block;
-  position: relative;
-}
+
 body.hasHover .footer-col a::after {
   content: '';
   position: absolute;
@@ -501,6 +496,10 @@ body.hasHover .footer-col a:hover::after {
 .footer a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+.footer-col a {
+  display: inline-block;
+  position: relative;
 }
 .footer ul {
   list-style: none;
@@ -576,15 +575,12 @@ body.hasHover .footer-col-3 a:hover::after {
   transform-origin: bottom left;
 }
 
-
 @media (max-width: 880px) {
-
   .navbar {
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
     margin: 0;
   }
   .header {
@@ -597,7 +593,7 @@ body.hasHover .footer-col-3 a:hover::after {
   }
   .Title-text a {
     color: #FEC158;
-    font-size: 30px;
+    font-size: 40px;
   }
   .Title-text { 
     position: relative;
@@ -646,9 +642,6 @@ body.hasHover .footer-col-3 a:hover::after {
   padding-left: 2rem;
   position: relative;
   }
-  .ProjectsContent h1 {
-  font-size: 38px;
-  }
   .mockup1 {
   padding-top: 3rem;
   padding-left: 2rem;
@@ -664,7 +657,7 @@ body.hasHover .footer-col-3 a:hover::after {
     padding-left: 2rem;
     color: #fff;
   }
-  .ProjectsText h2 {
+  .ProjectsText h3 {
     font-size: 32px;
   }
   .ProjectsText p {
@@ -680,38 +673,10 @@ body.hasHover .footer-col-3 a:hover::after {
     margin: 0;
   }
   .mockup2 img {
-  padding-bottom: 1.5rem;
-  margin-top: 3rem;
-  }
-  .ProjectsText2 {
-  padding-right: 2rem;
-  padding-left: 2rem;
-  justify-content: end;
-  color: #fff;
-  text-align: end;
-  }
-  .ProjectsText2 p {
-  display: flex;
-  justify-content: end;
-  }
-  .ProjectsText2 h2 {
-  font-size: 32px;
-  }
-  .explore {
-  margin-top: -1.4rem;
-  padding-left: 2rem;
-  }
-  .explore span {
-  color: #FEC158;
-  margin-left: .5rem;
-  font-size: 25px;
-  }
-  .explore a {
-  color: #FEC158;
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-  }
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
+    }
+ 
   .slider {
     overflow: hidden;
     background: #323445;
@@ -763,23 +728,13 @@ body.hasHover .footer-col-3 a:hover::after {
   }
 }
 
+
 @media (max-width: 770px) {
-  .logo {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .header {
-    position: relative;
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
   .links li {
     padding-left: 2rem;
   }
   .Title-text img {
-    margin-top: -10rem;
-    margin-left: 10rem;
-    position: relative;
+    margin-left: 15rem;
   }
   .Projects {
     padding-top: 5rem;
@@ -808,34 +763,16 @@ body.hasHover .footer-col-3 a:hover::after {
 }
 
 @media (max-width: 600px) {
-  
-  header {
-    padding-right: 1rem;
-    padding-left: 1rem;  
-  }
   .links li {
     padding-left: 1rem;
+  }
+  .navbar {
+    padding: 0 1rem;
   }
   .Title-text  {
     padding-right: 1rem;
     padding-left: 1rem;
   }
-  .Title-text p {
-    margin-top: 2rem;
-  }
-  .Title-text span {
-    background: #FEC158;
-    height: 5px;
-    width: 90px;
-    position: absolute;
-    padding: 0 2rem;
-  }
-  .Title-text img {
-    margin-top: -10rem;
-    margin-left: 5rem;
-    position: relative;
-  }
-  
   .Projects {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -847,7 +784,7 @@ body.hasHover .footer-col-3 a:hover::after {
     padding-right: 1rem;
   }
   .ProjectsText {
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     padding-right: 1rem;
     text-align: start;
   }
@@ -857,7 +794,7 @@ body.hasHover .footer-col-3 a:hover::after {
   }
   .ProjectsText2 {
     padding-left: 1rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
     text-align: end;
   }
   .ProjectsText2 p {
@@ -866,11 +803,8 @@ body.hasHover .footer-col-3 a:hover::after {
   }
   .mockup1 {
   padding-top: 3rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-right: 1rem;
-  margin: 0;
-  display: flex;
-  text-align: center;
   }
   .mockup1 img {
     width: 100%;
@@ -882,8 +816,7 @@ body.hasHover .footer-col-3 a:hover::after {
     display: flex;
     text-align: left;
     justify-content: end;
-    margin: 0;
-    margin-right: -3rem;
+    margin-right: -4rem;
   }
   .mockup2 img {
   padding-bottom: .5rem;
@@ -971,6 +904,9 @@ body.hasHover .footer-col-3 a:hover::after {
   .navigation-manual {
     padding-bottom: 1rem;
   }
+  .container {
+    padding: 0 1rem;
+  }
   .footer {
     padding: 30px 0;
   }
@@ -998,9 +934,12 @@ body.hasHover .footer-col-3 a:hover::after {
   .footer-col-3 a {
     text-align: left;
   }
+  .mockup1 {
+    padding-top: 5rem;
+  }
 }
 
-@media (max-width: 373px) {
+@media (max-width: 400px) {
 .slides h3 {
     margin-left: .5rem;
     font-size: 18px;
@@ -1017,11 +956,11 @@ body.hasHover .footer-col-3 a:hover::after {
 .manual-btn {
   margin-top: 2rem;
 }
-.ProjectsContent h1 {
+.ProjectsContent h2 {
    font-size: 30px;
   }
 .mockup1 {
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0;
@@ -1040,7 +979,7 @@ body.hasHover .footer-col-3 a:hover::after {
     color: #fff;
     text-align: end;
   }
-  .ProjectsText h2 {
+  .ProjectsText h3 {
     font-size: 25px;
   }
   .ProjectsText p {
@@ -1079,7 +1018,7 @@ body.hasHover .footer-col-3 a:hover::after {
   text-align: start;
   font-size: 16px;
   }
-  .ProjectsText2 h2 {
+  .ProjectsText2 h3 {
   font-size: 25px;
-  }
+}  
 }
