@@ -773,6 +773,9 @@ body.hasHover .footer-col-3 a:hover::after {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+   .Title-text img {
+    margin-left: 15rem;
+  }
   .Projects {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -900,6 +903,12 @@ body.hasHover .footer-col-3 a:hover::after {
   }
 }
 
+@media (max-width: 560px) {
+   .Title-text img {
+    margin-left: 10rem;
+  }
+}
+
 @media (max-width: 510px) {
   .navigation-manual {
     padding-bottom: 1rem;
@@ -939,7 +948,16 @@ body.hasHover .footer-col-3 a:hover::after {
   }
 }
 
+@media (max-width: 450px) {
+   .Title-text img {
+    margin-left: 3rem;
+  }
+}
+
 @media (max-width: 400px) {
+    .Title-text img {
+    margin-left: 5rem;
+  }
 .slides h3 {
     margin-left: .5rem;
     font-size: 18px;
