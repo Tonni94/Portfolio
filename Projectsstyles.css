@@ -108,7 +108,12 @@ body.hasHover .logo {
     margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 7rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .firstproject img {
+    margin-top: -18rem;
+    margin-right: 4.6rem;
   }
   .firstproject a {
     color: white;
@@ -128,7 +133,6 @@ body.hasHover .logo {
    margin-top: 10rem;
   }
   .projectimage {
-    margin-top: -26rem;
     text-align: right;
     margin-right: -5rem;
   }
@@ -150,6 +154,7 @@ body.hasHover .logo {
   .projectcolumn2 {
     width: 50%;
   }
+
   .projectcolumn h3 {
     display: flex;
   }
@@ -306,8 +311,45 @@ body.hasHover .logo {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+ 
+  @media (max-width: 1250px) {
+    .projectcolumn2 {
+      margin-left: -.5rem;
+    }
+    .thirdprojecttimg img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .projectcolumn2 {
+      margin-left: -2rem;
+    }
+    .secondproject img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1000px) {
+    .firstproject img {
+      width: 50%;
+    }
+    .secondproject img {
+      width: 100%;
+    }
+    .projectcolumn {
+      width: 70%;
+      padding-right: 0;
+    }
+    .projectcolumn2 {
+      width: 50%;
+      margin-right: -2rem;
+      margin-left:-1rem;
+    }
+    .projectlist {
+      display: none;
+    }
+  }
 
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .links li {
       padding-left: 1rem;
     }
@@ -325,12 +367,12 @@ body.hasHover .logo {
         font-size: 25px;
       }
     .firstproject img {
-    width: 100%;
+    width: 73%;
     align-content: center;
-    margin: 13rem 3rem 0 -3rem;
+    margin: -8rem 8.8rem 5rem -3rem;
     padding: 0;
     visibility: visible;
-    }
+  }
     .projectrow {
       padding: 0;
     }
@@ -339,37 +381,73 @@ body.hasHover .logo {
       padding: 0;
       width: 100%;
       margin-left: -12.5rem;
+      
     }
     .projectcolumn2 {
       visibility: visible;
       padding: 0;
       margin-top: 0;
+      margin-right: 0;
+      margin-left: 0;
     }
     .projectcolumn p{
       width: 110%;
       margin: 0 0 2rem 0;
-      margin-left: -3.3rem;
+      margin-left: -5.35rem;
     }
     .secondproject {
       padding: 0 1rem;
     }
     .secondproject img {
-      width: 255%;
+      width: 200%;
       visibility: visible;
       margin-top: 26rem;
       margin-bottom: 3rem;
-      padding-left: 5rem;
-    }
-    .projectlist {
-      display: none;
+      padding: 0;
+      margin-left: 2.7rem;
     }
     .thirdprojectt {
       padding: 0 1rem;
       text-align: center;
     }
-    .thirdprojectt img {
-      width: 600px;
-      margin-left: -1rem;
+    .thirdprojecttimg {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .projectcolumn p{
+      margin-left: -5rem;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .projectcolumn p{
+      margin-left: -4.9rem;
+    }
+    .secondproject img {
+      margin-left: 2.4rem;
+     }
+  }
+
+  @media (max-width: 640px) {
+    .projectcolumn p{
+      margin-left: -4.5rem;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .projectcolumn p{
+      margin-left: -4rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .projectcolumn p{
+      margin-left: -3.55rem;
+    }
+    .secondproject img {
+      margin-left: 1.8rem;
     }
   }
   
@@ -377,21 +455,36 @@ body.hasHover .logo {
       .projectcolumn p {
         margin-left: -2.85rem;
       }
+      .secondproject img {
+        margin-left: 1.55rem;
+      }
     }
+
     @media (max-width: 560px) {
       .projectcolumn p {
         margin-left: -2.4rem;
         width: 105%;
       }
+      .firstproject img {
+        margin: -8rem 7.5rem 5rem -3rem;
     }
+    }
+
     @media (max-width: 540px) {
       .projectcolumn p {
         margin-left: -2rem;
       }
-    }
+      .secondproject img {
+        margin-left: 1.15rem;
+      }
+  }
+
     @media (max-width: 520px) {
       .projectcolumn p {
         margin-left: -1.7rem;
+      }
+      .secondproject img {
+        margin-left: 0.9rem;
       }
     }
 
@@ -428,14 +521,16 @@ body.hasHover .logo {
       text-align: left;
     }
   }
+
     @media (max-width: 500px) {
       .projectcolumn p {
         margin-left: -1.25rem;
       }
-      .secondproject img {
-        padding-left: 4rem;
-      }
+     .secondproject img {
+      margin-left: 0.55rem;
+     }
     }
+
     @media (max-width: 480px) {
       .projectcolumn p {
         margin-left: -.8rem;
@@ -444,106 +539,112 @@ body.hasHover .logo {
       .secondproject img {
         margin-top: 28rem
       }
+      .firstproject img {
+        margin: -8rem 7rem 5rem -3rem;
+      }
     }
+
     @media (max-width: 460px) {
       .projectcolumn p{
       margin-left: -.3rem;
     }
     .firstproject img {
-      margin: 14rem 3rem 0 -3rem;
+      margin: -8rem 5.6rem 5rem -3rem;
+      width: 80%;
     }
+    .secondproject img {
+      margin-left: 0.2rem;
+     }
   }
+
   @media (max-width: 440px) {
     .projectcolumn p{
-    margin-left: .15rem;
+    margin-left: 0rem;
   }
+  .secondproject img {
+    margin-left: 0rem;
+   }
 }
+
 @media (max-width: 420px) {
-  .projectcolumn p{
-  margin-left: .75rem;
+  .projectcolumn p {
+  margin-left: 0.69rem;
+  
 }
 .secondproject img {
-  padding-left: 3.6rem;
+  margin-top: 30rem;
 }
 }
 @media (max-width: 400px) {
   .projectcolumn p{
-  margin-left: 1.2rem;
-  width: 99%;
-}
-.secondproject img {
-  margin-top: 31rem;
-}
-}
-@media (max-width: 380px) {
-  .projectcolumn p{
-  margin-left: .5rem;
-}
-}
-    @media (max-width: 390px) {
-      .projectcolumn{
-      margin-left: -2.2rem;
-      }
-      .projectcolumn{
-      margin-left: -12.2rem;
-    }
-    }
-    @media (max-width: 380px) {
-      .projectcolumn{
-      margin-left: -11.88rem;
-      }
-      .secondproject img {
-        margin-top: 34rem;
-      }
-    }
-    .secondproject img {
-      padding-left: 4.4rem;
-    }
+  margin-left: 1.23rem;
   
-  @media (max-width: 380px) {
-    .projectcolumn{
-    margin-left: -11.2rem;
+}
+.firstproject img {
+  margin: -8rem 5.2rem 5rem -3rem;
+}
+.thirdprojecttimg {
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+}
+
+@media (max-width: 390px) {
+  .secondproject img {
+margin-left: -.1rem;
+padding: 0rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .projectcolumn p {
+    margin-left: 1.83rem;
+  }
+}
+
+  @media (max-width: 370px) {
+    .projectcolumn p{
+    margin-left: 2.2rem;
     }
     .secondproject img {
-      margin-top: 34rem;
+      margin-top: 33rem;
     }
   }
-  .secondproject img {
-    margin-left: -5.2rem;
-  }
-  @media (max-width: 370px) {
-    .projectcolumn {
-    margin-left: -10.6rem;
-    }
-  }
+
 @media (max-width: 360px) {
   .firstproject h1 {
     font-size: 22px;
   }
-  .projectcolumn {
-  margin-left: -10.5rem;
+  .firstproject img {
+    margin: -8rem 5rem 5rem -3rem;
+  }
+  .projectcolumn p {
+  margin-left: 2.4rem;
 }
 }
+
 @media (max-width: 350px) {
-  .projectcolumn {
-  margin-left: -10.2rem;
+  .projectcolumn p {
+  margin-left: 2.6rem;
 }
 .secondproject img {
-  margin-left: -4.9rem;
   margin-top: 35rem;
+  margin-left: -.1rem;
 }
 }
+
 @media (max-width: 340px) {
-  .projectcolumn {
-  margin-left: -9.9rem;
+  .projectcolumn p{
+  margin-left: 2.8rem;
 }
 }
+
 @media (max-width: 330px) {
-  .projectcolumn {
-  margin-left: -9.7rem;
+  .projectcolumn p{
+  margin-left: 3.4rem;
 }
 .secondproject img {
-  margin-left: -4.8rem;
-  margin-top: 35rem;
+  margin-top: 36rem;
+  margin-left: 0rem;
 }
 }
