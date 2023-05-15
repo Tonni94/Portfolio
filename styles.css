@@ -773,9 +773,6 @@ body.hasHover .footer-col-3 a:hover::after {
     padding-right: 1rem;
     padding-left: 1rem;
   }
-   .Title-text img {
-    margin-left: 15rem;
-  }
   .Projects {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -903,8 +900,13 @@ body.hasHover .footer-col-3 a:hover::after {
   }
 }
 
-@media (max-width: 560px) {
-   .Title-text img {
+@media (max-width: 570px) {
+  .Title-text img {
+    margin-left: 12rem;
+  }
+}
+@media (max-width: 530px) {
+  .Title-text img {
     margin-left: 10rem;
   }
 }
@@ -947,17 +949,18 @@ body.hasHover .footer-col-3 a:hover::after {
     padding-top: 5rem;
   }
 }
-
-@media (max-width: 450px) {
-   .Title-text img {
-    margin-left: 3rem;
+@media (max-width: 490px) {
+  .Title-text img {
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 440px) {
+  .Title-text img {
+    margin-left: 5rem;
   }
 }
 
 @media (max-width: 400px) {
-    .Title-text img {
-    margin-left: 5rem;
-  }
 .slides h3 {
     margin-left: .5rem;
     font-size: 18px;
@@ -1039,4 +1042,10 @@ body.hasHover .footer-col-3 a:hover::after {
   .ProjectsText2 h3 {
   font-size: 25px;
 }  
+}
+
+@media (max-width: 440px) {
+  .Title-text img {
+    margin-left: 4rem;
+  }
 }
