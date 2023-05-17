@@ -368,6 +368,7 @@ header {
       width: 500px;
       margin-top: 8rem;
     }
+  }
 
   @media (max-width: 620px) {
     .aboutcolumn {
@@ -375,6 +376,9 @@ header {
     }
     .aboutcolumn2 {
       padding-right: 1rem;
+    }
+    .aboutcolumn2 img {
+      margin-top: 12.8rem;
     }
     .aboutcolumn h3 {
       width: 480px;
@@ -432,6 +436,15 @@ header {
     }
     .aboutlist {
       width: 100%;
+      justify-content:flex-start;
+      margin-top: -3rem;
+    }
+    .aboutlist figure:nth-child(2) li {
+      margin-right: 0rem;
+    }
+    .aboutlist figure:nth-child(3) {
+      margin-top: 8rem;
+      margin-left: -17.2rem;
     }
   }
 
@@ -460,4 +473,4 @@ header {
     width: 250px;
   }
 }
-  }
+  
